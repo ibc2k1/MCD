@@ -2,10 +2,6 @@ import React, { useState } from 'react'
 import { Link } from "react-router-dom";
 import {cookies} from "react-cookie";
 
-var cookieDataTemp = JSON.stringify(cookies.get(`${this.state.user_ID}`));
-        var cookieData = JSON.parse(cookieDataTemp);
-        console.log(cookieData);
-
 export default function PrintOrderList(){
     return(
         <>
