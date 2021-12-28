@@ -7,13 +7,14 @@ import WrongNum from "./page/wrongNum";
 import PrintOrderList from "./page/printOrderList";
 
 function App() {
+  const cookieID = "111"
   return (
     <Router>
       <Routes>
         <Route path="/" exact element= {<SelectPayMode/>}/>
         <Route path="/inputCardNum" exact element= {<InputCardNum/>}/>
         <Route path="/wrongNum" exact element= {<WrongNum/>}/>
-        <Route path="/printOrderList" exact element= {<PrintOrderList/>}/>
+        <Route path="/printOrderList" exact element= {<PrintOrderList Name = {cookieID}/>}/>
       </Routes>
     </Router>
   );

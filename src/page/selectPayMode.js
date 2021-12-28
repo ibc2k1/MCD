@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import './selectPayMode.css'
 import IconButton from '@material-ui/core/IconButton';
 import { Link } from "react-router-dom";
-import PrintOrderList from "./printOrderList.js";
 
 export default function SelectPayMode(){
     return(
